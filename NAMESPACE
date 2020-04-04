@@ -1,0 +1,3 @@
+useDynLib(MIDASwrappeR, .registration=TRUE)
+exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
