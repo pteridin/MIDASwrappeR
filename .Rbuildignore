@@ -1,6 +1,9 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+<<<<<<< HEAD
 ^README\.Rmd$
 ^cran-comments\.md$
 ^CRAN-RELEASE$
 ^LICENSE$
+=======
+>>>>>>> e244832a836eb5c14033587db5ce0a88935221ba

@@ -5,4 +5,7 @@
 src/*.o
 src/*.so
 src/*.dll
+<<<<<<< HEAD
 inst/doc
+=======
+>>>>>>> e244832a836eb5c14033587db5ce0a88935221ba
