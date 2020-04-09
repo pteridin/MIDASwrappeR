@@ -3,7 +3,10 @@
 
 #include <limits>
 #include <iostream>
-#include "edgehash.hpp"
+#include "edgehash.h"
+#include <Rcpp.h>
+
+using namespace Rcpp;
 
 Edgehash::Edgehash(int r, int b, int m0)
 {
@@ -14,8 +17,8 @@ Edgehash::Edgehash(int r, int b, int m0)
     hash_b.resize(num_rows);
     for (int i = 0; i < r; i++) {
         // a is in [1, p-1]; b is in [0, p-1]
-        hash_a[i] = rand() % (num_buckets - 1) + 1;
-        hash_b[i] = rand() % num_buckets;
+        hash_a[i] = floor(unif_rand() * (num_buckets - 1) + 1);
+        hash_b[i] = floor(unif_rand() * (num_buckets) + 1);
     }
     this->clear();
 }

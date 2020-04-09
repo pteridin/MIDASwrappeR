@@ -1,12 +1,21 @@
 Package: MIDASwrappeR
 Type: Package
-Title: What the Package Does in One 'Title Case' Line
-Version: 1.0
-Date: 2020-04-04
-Author: Your Name
-Maintainer: Your Name <your@email.com>
-Description: One paragraph description of what the package does as one or more full sentences.
-License: GPL (>= 2)
+Title: Microcluster-Based Detector of Anomalies in Edge Streams
+Version: 0.5.1
+Date: 2020-04-07
+Author: Tobias Heidler
+Maintainer: Tobias Heidler <tobias.heidler@googlemail.com>
+Description: This is a wrapper around the C++ implementation of 'MIDAS' (Bhatia et al., 2020) <https://www.comp.nus.edu.sg/~sbhatia/assets/pdf/midas.pdf> by Siddharth Bhatia for graph like data.
+Language: en-US
+License: Apache License (>= 2)
 Imports: Rcpp (>= 1.0.4)
 LinkingTo: Rcpp
 RoxygenNote: 7.0.2
+URL: https://github.com/pteridin/MIDASwrappeR
+BugReports: https://github.com/pteridin/MIDASwrappeR/issues
+Depends: R (>= 3.4)
+Encoding: UTF-8
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
