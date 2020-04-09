@@ -5,9 +5,9 @@
 #include <math.h>
 #include <algorithm>
 #include <vector>
-#include "anom.hpp"
-#include "edgehash.hpp"
-#include "nodehash.hpp"
+#include "anom.h"
+#include "edgehash.h"
+#include "nodehash.h"
 
 vector<double>* midas(vector<int>& src, vector<int>& dst, vector<int>& times, int num_rows, int num_buckets)
 {

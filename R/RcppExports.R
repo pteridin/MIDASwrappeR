@@ -6,8 +6,8 @@
 #' @param input A data.frame with columns src (source, int), dst (destination, int) & times (timestamp of the edge, int) representing transaction edges
 #' @param rows Number of rows/hash functions. Default is 2
 #' @param buckets Number of buckets. Default is 769
-#' @param alpha Temporal Decay Factor. Default is 0.6
-#' @param norelations Run Midas instead of Midas-R. Default is False
+#' @param alpha Temporal Decay Factor. Only used when 'MIDAS-R' is used. Default is 0.6
+#' @param norelations Run 'MIDAS' instead of 'MIDAS-R'. Default is False
 #' @param undirected If graph is undirected. Default is False
 #' @return NumericVector of MIDAS-Scores
 #' @export

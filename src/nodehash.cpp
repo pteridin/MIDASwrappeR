@@ -3,7 +3,10 @@
 
 #include <iostream>
 #include <limits>
-#include "nodehash.hpp"
+#include "nodehash.h"
+#include <Rcpp.h>
+
+using namespace Rcpp;
 
 Nodehash::Nodehash(int r, int b)
 {
@@ -13,8 +16,8 @@ Nodehash::Nodehash(int r, int b)
     hash_b.resize(num_rows);
     for (int i = 0; i < r; i++) {
         // a is in [1, p-1]; b is in [0, p-1]
-        hash_a[i] = rand() % (num_buckets - 1) + 1;
-        hash_b[i] = rand() % num_buckets;
+        hash_a[i] = floor(unif_rand() * (num_buckets - 1) + 1);
+        hash_b[i] = floor(unif_rand() * (num_buckets) + 1);
     }
     this->clear();
 }
